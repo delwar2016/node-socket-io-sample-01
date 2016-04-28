@@ -50,11 +50,13 @@ server.listen(8001);
 
 var listener = io.listen(server);
 listener.sockets.on('connection', function(socket){
+
   setInterval(function(){
-    socket.emit('sayhello', {'date': new Date()});
+    socket.emit('sendFromServer', {'serverData': new Date()});
   }, 1000);
 
   socket.on('sendFromClient', function(data){
-    console.log('response from client', data.data);
+    console.log('response from client', data.clientData);
   });
+
 });

@@ -6,12 +6,12 @@
 <script>
   var socket = io.connect();
 
-  socket.on('sayhello', function(data){
-    document.getElementById('server-response'). innerHTML= data.date;
+  socket.on('sendFromServer', function(data){
+    document.getElementById('server-response'). innerHTML= data.serverData;
   });
 
   function myFunction(){
-    socket.emit('sendFromClient', {'data': document.getElementById('message').value});
+    socket.emit('sendFromClient', {'clientData': document.getElementById('message').value});
   }
 
 </script>
