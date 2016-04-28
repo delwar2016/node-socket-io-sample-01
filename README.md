@@ -2,3 +2,13 @@
 This is a sample example of nodejs  with socket.io
 
 This sample project can help begineers.
+
+
+Instruction to run:
+
+  npm install
+
+  node server.js
+
+
+
