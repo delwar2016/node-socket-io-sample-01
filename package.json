@@ -1,0 +1,26 @@
+{
+  "name": "node-socket-io-sample-01",
+  "version": "1.0.0",
+  "description": "This is a sample example of nodejs  with socket.io",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/delwar2016/node-socket-io-sample-01.git"
+  },
+  "keywords": [
+    "nodejs",
+    "socket.io"
+  ],
+  "author": "Md. Delwar Hossian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/delwar2016/node-socket-io-sample-01/issues"
+  },
+  "homepage": "https://github.com/delwar2016/node-socket-io-sample-01#readme",
+  "dependencies": {
+    "socket.io": "^1.4.5"
+  }
+}

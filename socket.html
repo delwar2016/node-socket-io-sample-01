@@ -1,0 +1,26 @@
+<html>
+<head>
+  <script src="/lib/socket.io.js"></script>
+</head>
+<body>
+<script>
+  var socket = io.connect();
+
+  socket.on('sayhello', function(data){
+    document.getElementById('server-response'). innerHTML= data.date;
+  });
+
+  function myFunction(){
+    socket.emit('sendFromClient', {'data': document.getElementById('message').value});
+  }
+
+</script>
+<p>server response is here</p>
+<div id="server-response">no responses</div>
+<br>
+<br>
+<input type="text" id="message" />
+<button id="sendButton" onclick="myFunction()">Send</button>
+
+</body>
+</html>
